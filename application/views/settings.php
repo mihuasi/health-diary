@@ -3,15 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<title>Welcome to CodeIgniter</title>
+<?php 
+$staging = true;
+$base = base_url();
+?>
+        <script type="text/javascript" src="<?php echo $base;?>js/lib/jquery.1.11.full.js" ></script>
+        <script type="text/javascript" src="<?php echo $base;?>js/lib/jquery-ui-1.10.4.custom.min.js"></script>
+        <script type="text/javascript" src="<?php echo $base;?>js/lib/tag-it.js"></script>
+        <script type="text/javascript" src="<?php echo $base;?>js/lib/editable.1.7.1.js"></script>
+        <script type="text/javascript" src="<?php echo $base;?>js/settings.js" ></script>
 
-        <script type="text/javascript" src="<?php echo base_url();?>js/lib/jquery.1.11.full.js" ></script>
-        <script type="text/javascript" src="<?php echo base_url();?>js/lib/jquery-ui-1.10.4.custom.min.js"></script>
-        <script type="text/javascript" src="<?php echo base_url();?>js/lib/tag-it.js"></script>
-        <script type="text/javascript" src="<?php echo base_url();?>js/lib/editable.1.7.1.js"></script>
-        <script type="text/javascript" src="<?php echo base_url();?>js/settings.js" ></script>
-
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/base.css">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/settings.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo $base;?>css/base.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo $base;?>css/settings.css">
         <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css">
 <link href="css/jquery.tagit.css" rel="stylesheet" type="text/css">
 

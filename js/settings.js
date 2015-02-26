@@ -2,8 +2,9 @@
 $(document).ready(function() {
     var times = $.parseJSON($('.times').text());
     var positions = $.parseJSON($('.positions').text());
+    var urlbase = '/health-diary';
 
-    $(".editable_textarea").editable("/settings/saveTableField", {
+    $(".editable_textarea").editable(urlbase + "/settings/saveTableField", {
         indicator : "<img src='images/ajax-loader.gif'>",
         type   : 'textarea',
         submitdata: { _method: "post" },
@@ -13,7 +14,7 @@ $(document).ready(function() {
         cssclass : "editable"
     });
 
-    $(".editable_select.time_select").editable("/settings/saveTableField", {
+    $(".editable_select.time_select").editable(urlbase + "/settings/saveTableField", {
         indicator : "<img src='images/ajax-loader.gif'>",
         data   : times,
         type   : "select",
@@ -24,7 +25,7 @@ $(document).ready(function() {
         }
     });
 
-    $(".editable_select.display_order").editable("/settings/saveTableField", {
+    $(".editable_select.display_order").editable(urlbase + "/settings/saveTableField", {
         indicator : "<img src='images/ajax-loader.gif'>",
         data   : positions,
         type   : "select",
@@ -43,7 +44,7 @@ $(document).ready(function() {
         if (confirmAction==true) {
             $.ajax({
                 type: "POST",
-                url: '/settings/removeInfluence',
+                url: urlbase + '/settings/removeInfluence',
                 data: {id : $(this).data('id')},
                 success: deleteSuccess,
                 dataType: 'json'
@@ -57,7 +58,7 @@ $(document).ready(function() {
         };
         $.ajax({
             type: "POST",
-            url: '/settings/addInfluence',
+            url: urlbase + '/settings/addInfluence',
             data: {id : $(this).data('id')},
             success: addSuccess,
             dataType: 'json'
@@ -72,7 +73,7 @@ $(document).ready(function() {
         if (confirmAction==true) {
             $.ajax({
                 type: "POST",
-                url: '/settings/removeAspect',
+                url: urlbase + '/settings/removeAspect',
                 data: {id : $(this).data('id')},
                 success: deleteSuccess,
                 dataType: 'json'
@@ -86,7 +87,7 @@ $(document).ready(function() {
         };
         $.ajax({
             type: "POST",
-            url: '/settings/addAspect',
+            url: urlbase + '/settings/addAspect',
             data: {id : $(this).data('id')},
             success: addSuccess,
             dataType: 'json'

@@ -1,6 +1,7 @@
 $(function(){
 
     var slideTo;
+    var urlbase = '/health-diary';
     
     function setup() {
         $.datepicker.setDefaults({
@@ -21,7 +22,7 @@ $(function(){
             var selectedDate = $(this).val();
             $.ajax({
                 type: "POST",
-                url: 'http://localhost:8888/ci/index.php/tracker/refreshForm',
+                url: urlbase + '/tracker/refreshForm',
                 data : {date : selectedDate},
                 success: formChangeDateSuccess,
                 dataType: 'json'
@@ -107,20 +108,20 @@ $(function(){
             var onSuccess = function(data) {
                 $.ajax({
                     type: "POST",
-                    url: 'http://localhost:8888/ci/index.php/tracker/addNewDayToPrevious',
+                    url: urlbase + '/tracker/addNewDayToPrevious',
                     success: newDayLoadedSuccess,
                     dataType: 'json'
                 });
                 $.ajax({
                     type: "POST",
-                    url: 'http://localhost:8888/ci/index.php/tracker/refreshForm',
+                    url: urlbase + '/tracker/refreshForm',
                     success: formRefreshSuccess,
                     dataType: 'json'
                 });
             }
             $.ajax({
                 type: "POST",
-                url: 'http://localhost:8888/ci/index.php/tracker/processNewEntry',
+                url: urlbase + '/tracker/processNewEntry',
                 data: {'tags' : tags, 'ratings' : ratingVals, 'date' : date},
                 success: onSuccess,
                 dataType: 'json'
