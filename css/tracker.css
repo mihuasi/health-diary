@@ -1,0 +1,114 @@
+.ui-datepicker-calendar {
+    background-color: white;
+}
+
+.ui-datepicker-current-day {
+    background-color: gray;
+}
+
+.tagit .ui-icon,.tagit li, .tagit .ui-effects-wrapper {display: inline;}
+.tagit li {
+    margin-left: 10px;
+}
+
+.tagit-close {cursor: pointer;}
+
+.day-values {
+    font-weight: 700;
+}
+
+.previousDaysContainer li {
+    list-style: none;
+}
+
+.readOnlyTags .tagit-new {
+    display: none;
+}
+
+.readOnlyTags .tagit-label {
+    color: #5E00EA;
+    cursor: default;
+}
+
+
+.clearboth {
+	clear: both;
+}
+
+.use-tags.influences {
+	/*width: 45%;
+	float: left;
+	border-right: solid black 1px;*/
+}
+
+.use-tags.aspects {
+	/*width: 45%;
+	float: left;*/
+}
+
+.use-tags label, .previousDaysContainer span.category {
+	display: inline-block;
+	min-width: 80px;
+}
+
+.dateContainer {
+	margin-left: 77px;
+}
+
+ol.ui-widget-content {
+	border: none;
+}
+
+.newEntryFormContainer {
+	position: relative;
+}
+
+button#submitEntry {
+	/*position: absolute;
+	right: 15px;
+	bottom: 0;*/
+	margin-left: 80px;
+}
+
+.tagit select {
+	margin-left: 10px;
+}
+
+.tagit-new input {
+	width: 100px;
+}
+
+h2.textualDateFull {
+	display: inline;
+	margin-left: 15px;
+}
+
+img.editEntry {
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.newEntryMessage {
+	background-color: #CFFFD1;
+}
+
+.editEntryMessage {
+	background-color: #FFFFAB;
+}
+
+.information {
+	position: relative;
+}
+
+.information .closeInfo {
+	position: absolute;
+	right: 40px;
+	top:0;
+	cursor: pointer;
+	display: none;
+}
+
+.information p {
+	padding-left: 40px;
+	display: none;
+}

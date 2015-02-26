@@ -1,0 +1,6 @@
+.influences-settings td {
+    width: 140px;
+}
+.can-edit {
+    cursor: pointer;
+}
