@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/base.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/tracker.css">
         <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>jquery.tagit.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/jquery.tagit.css">
 
 </head>
 <body>

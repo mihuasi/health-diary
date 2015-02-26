@@ -2,6 +2,7 @@
 $(document).ready(function() {
     var times = $.parseJSON($('.times').text());
     var positions = $.parseJSON($('.positions').text());
+    //TODO set this at global level
     var urlbase = '/health-diary';
 
     $(".editable_textarea").editable(urlbase + "/settings/saveTableField", {

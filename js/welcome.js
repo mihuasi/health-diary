@@ -1,6 +1,7 @@
 $(function(){
 
     var slideTo;
+    //TODO set this at global level
     var urlbase = '/health-diary';
     
     function setup() {
